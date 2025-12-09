@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Reservation Table</title>
+	<link rel="stylesheet" href="Resercation_page.css">
+</head>
+<body>
+	<div class="bg">
+		<img src="assets/bg.jpg">
+	</div>
+
+	<header>
+		<div class="logo">
+			<img src="assets/logo.png">
+			<h1>La Cousine</h1>
+		</div>
+		<nav>
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#" class="active">
+				<img src="assets/heart.png">
+				Favorites
+			</a>
+			<a href="#">
+				<img src="assets/user.png">
+				Profile
+			</a>
+		</nav>
+	</header>
+
+	<main class="main">
+		<div class="lftsec">
+			<img src="assets/restaurant.jpg" class="resimg">
+			<div class="resinfo">
+				<h2>Taberu Restaurant</h2>
+				<p>Japanese</p>
+				<p>Jl. Diponegoro No.23, Cihapi, Bandung, Jawa Barat 40114</p>
+			</div>
+			<div class="formGrp">
+				<label>Date</label>
+				<input type="date" id="res-date" name="reservation_date">
+			</div>
+			<div class="formGrp">
+				<label>Time</label>
+				<input type="time" id="res-time" name="reservation_time">
+			</div>
+		</div>
+		<div class="rightsec">
+			<h2>Taberu Restaurant</h2>
+			<form id="reservationForm">
+				<div class="formGrp">
+					<label>Full Name</label>
+					<input type="text" id="fullNameInput" placeholder="Enter your name" required>
+				</div>
+				<div class="formGrp">
+					<label>Phone Number</label>
+					<input type="tel" id="phoneInput" placeholder="Enter phone number" required>
+				</div>
+				<div class="formGrp">
+					<label>Party Size</label>
+					<select id="partySizeSelect" required>
+						<option value="">Select party size</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5+">5+</option>
+					</select>
+				</div>
+				<div class="formGrp">
+					<label>VIP Room (Optional)</label>
+					<select id="vipRoomSelect">
+						<option value="no">No</option>
+						<option value="yes">Yes</option>
+					</select>
+				</div>
+				<div class="formGrp">
+					<label>Email</label>
+					<input type="email" id="emailInput" placeholder="jhondoe@example.com">
+				</div>
+				<div class="formGrp">
+					<label>Special Requests (Optional)</label>
+					<textarea id="specialRequestsInput" placeholder="Enter special requests"></textarea>
+				</div>
+				<button type="submit" class="submit-btn">Confirm Reservation</button>
+			</form>
+		</div>
+	</main>
+
+	<footer>
+		<div class="footerCol">
+			<h3>La Cuisine</h3>
+			<p>Fresh and halal meals made easy</p>
+		</div>
+		<div class="footerCol">
+			<h3>Links</h3>
+			<a href="#">Home</a>
+			<a href="#">About</a>
+			<a href="#">Favorite</a>
+			<a href="#">Profile</a>
+		</div>
+		<div class="footerCol">
+			<h3>Follow Us</h3>
+			<div class="sosIcon">
+				<img src="assets/facebook.png">
+				<img src="assets/instagram.png">
+				<img src="assets/tiktok.png">
+				<img src="assets/youtube.png">
+			</div>
+			<div class="copyright">© 2025 La Cuisne. All rights reserved</div>
+		</div>
+	</footer>
+
+
+</body>
+</html>
